@@ -1,0 +1,26 @@
+# Smart home controller settings 
+CONTR_HOST=ws://192.168.1.20
+CONTR_PORT=8080
+CONTR_USERNAME=homeassistant
+CONTR_PASSWORD=myMQTTPassword
+
+# Updates from the smart home controller, base of the subscribe string:
+MQTT_S_BASE=homeassistant/livingroom/thermostat/
+
+# Anna thermostat settings:
+ANNA_IP=192.168.1.21
+ANNA_PASSWORD=qwertyui
+
+# Updates from Anna, base of the publish string:
+MQTT_P_BASE=anna/livingroom/thermostat/
+
+# Anna reload interval in seconds:
+INTERVAL=10
+
+# Precision, can be used to reduce the number of updates:
+PRECISION_1=illuminance,domestic_temperature
+PRECISION_05=boiler_temperature,setpoint
+PRECISION_01=temperature,water_pressure
+
+# Do not publish those fields:
+IGNORE=
