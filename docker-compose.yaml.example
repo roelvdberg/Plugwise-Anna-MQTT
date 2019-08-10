@@ -1,0 +1,12 @@
+version: '3'
+services:
+  plugwise_anna:
+    build: .
+    image: plugwise/anna
+    container_name: plugwise_anna
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - .:/usr/app/
+      - /usr/app/node_modules

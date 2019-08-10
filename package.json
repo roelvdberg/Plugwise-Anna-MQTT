@@ -1,0 +1,22 @@
+{
+  "name": "plugwise_anna",
+  "version": "1.0.0",
+  "description": "Plugwise Anna thermostat MTTQ broker/client",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "http": "^0.0.0",
+    "mqtt": "^2.18.8",
+    "xmldom": "^0.1.27",
+    "xpath": "^0.0.27",
+    "request": "^2.88.0",
+    "mathjs": "^5.4.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
